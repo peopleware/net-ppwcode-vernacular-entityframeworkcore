@@ -1,0 +1,5 @@
+name: ppwcode-vernacular-entityframeworkcore-i
+version: ~
+title: PPWCode.Vernacular.EntityFrameworkCore.I
+nav:
+  - modules/ROOT/nav.adoc

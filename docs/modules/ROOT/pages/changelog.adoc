@@ -1,0 +1,28 @@
+= Changelog
+
+////
+The changelog is maintained here.
+
+Note that it is best to update the changelog as new code is developed, and that
+the link to the GitHub tag is only added once we are ready to release.
+////
+
+// some helper attributes for the release links
+:github: https://github.com/peopleware/net-ppwcode-vernacular-entityframeworkcore/releases/tag/I%2F
+:nuget-main: https://www.nuget.org/packages/PPWCode.Vernacular.EntityFrameworkCore.I/
+:nuget-sql: https://www.nuget.org/packages/PPWCode.Vernacular.EntityFrameworkCore.I.SqlServer/
+:nuget-pgsql: https://www.nuget.org/packages/PPWCode.Vernacular.EntityFrameworkCore.I.PostgreSQL/
+:main: PPWCode.Vernacular.EntityFrameworkCore.I
+:sql: PPWCode.Vernacular.EntityFrameworkCore.I.SqlServer
+:pgsql: PPWCode.Vernacular.EntityFrameworkCore.I.PostgreSQL
+:ppwcode-docs: https://peopleware.github.io/net-ppwcode-docs/ppwcode-vernacular-entityframeworkcore-i/
+
+:github-user: https://github.com/
+:github-pr: https://github.com/peopleware/net-ppwcode-vernacular-entityframeworkcore/pull/
+:github-issue: https://github.com/peopleware/net-ppwcode-vernacular-entityframeworkcore/issues/
+
+
+:release: 1.0.0
+== `{release}`
+include::partial$changelog-release-section.adoc[]
+include::partial$changelog-{release}.adoc[]

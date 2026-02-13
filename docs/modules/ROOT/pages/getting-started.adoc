@@ -1,0 +1,27 @@
+= Getting started
+
+// helper attributes for package links
+:nuget-main: https://www.nuget.org/packages/PPWCode.Vernacular.EntityFrameworkCore.I/
+:nuget-sql: https://www.nuget.org/packages/PPWCode.Vernacular.EntityFrameworkCore.I.SqlServer/
+:nuget-pgsql: https://www.nuget.org/packages/PPWCode.Vernacular.EntityFrameworkCore.I.PostgreSQL/
+:main: PPWCode.Vernacular.EntityFrameworkCore.I
+:sql: PPWCode.Vernacular.EntityFrameworkCore.I.SqlServer
+:pgsql: PPWCode.Vernacular.EntityFrameworkCore.I.PostgreSQL
+
+== Add NuGet package
+
+All libraries that are part of the `PPWCode.Vernacular.EntityFrameworkCore.I` project are published on NuGet.
+
+The following packages are available:
+
+- {nuget-main}[{main}], base library
+- {nuget-sql}[{sql}], support for Microsoft SQL Server
+- {nuget-pgsql}[{pgsql}], support for PostgreSQL
+
+
+You can use your IDE to add the required libraries as dependencies to your project, or manually add them in the `.csproj` file.  This would look similar to the following:
+
+[source,xml]
+----
+include::example$project.csproj[]
+----
