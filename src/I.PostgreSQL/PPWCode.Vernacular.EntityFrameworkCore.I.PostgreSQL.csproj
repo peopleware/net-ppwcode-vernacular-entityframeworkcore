@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\common.props"/>
+
+    <ItemGroup>
+        <PackageReference Include="Npgsql" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\I\PPWCode.Vernacular.EntityFrameworkCore.I.csproj" />
+    </ItemGroup>
+
+</Project>

@@ -21,7 +21,7 @@ namespace PPWCode.Vernacular.EntityFrameworkCore.I.DbConstraint
 {
     public abstract class DbConstraints : IDbConstraints
     {
-        private static readonly object _locker = new ();
+        private static readonly object _locker = new();
 
         private static readonly ISet<DbConstraintMetadata> _emptyDbConstraintMetadata =
             new HashSet<DbConstraintMetadata>();
@@ -60,7 +60,7 @@ namespace PPWCode.Vernacular.EntityFrameworkCore.I.DbConstraint
 
             if (_constraints != null)
             {
-                DbConstraintMetadataKey key = new (schemaName, constraintName);
+                DbConstraintMetadataKey key = new(schemaName, constraintName);
                 _constraints.TryGetValue(key, out DbConstraintMetadata? constraint);
                 return constraint;
             }

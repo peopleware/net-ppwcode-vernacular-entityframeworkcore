@@ -57,7 +57,7 @@ public abstract class DbExceptionTriageInterceptor<TProviderException>
         TProviderException? providerException = ExtractProviderException(eventException);
         if (providerException is not null)
         {
-            DbConstraintExceptionDataBuilder builder = new ();
+            DbConstraintExceptionDataBuilder builder = new();
 
             if (eventException is DbUpdateException dbUpdateException)
             {

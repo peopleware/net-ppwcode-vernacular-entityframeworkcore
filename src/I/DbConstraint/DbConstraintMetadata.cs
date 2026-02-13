@@ -34,7 +34,7 @@ namespace PPWCode.Vernacular.EntityFrameworkCore.I.DbConstraint
         public string SchemaName { get; }
 
         public DbConstraintMetadataKey Key
-            => new (SchemaName, ConstraintName);
+            => new(SchemaName, ConstraintName);
 
         public string FullQualifiedName
             => $"{SchemaName}.{ConstraintName}";

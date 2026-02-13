@@ -17,7 +17,7 @@ namespace PPWCode.Vernacular.EntityFrameworkCore.I.Exceptions;
 
 public class DbConstraintExceptionDataBuilder
 {
-    private readonly List<EntityEntry> _entries = new ();
+    private readonly List<EntityEntry> _entries = new();
     private string? _constraintName;
     private DbConstraintTypeEnum? _constraintType;
     private object? _entityKey;
@@ -108,7 +108,7 @@ public class DbConstraintExceptionDataBuilder
         => this;
 
     public static implicit operator DbConstraintExceptionData(DbConstraintExceptionDataBuilder builder)
-        => new (
+        => new(
             builder._constraintType,
             builder._constraintName,
             builder._schemaName,

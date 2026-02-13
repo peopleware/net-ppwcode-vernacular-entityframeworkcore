@@ -42,7 +42,7 @@ public class WildExceptionsInterceptor : SaveChangesInterceptor
 
     private CompoundSemanticException Validate(DbContext dbContext)
     {
-        CompoundSemanticException cse = new ();
+        CompoundSemanticException cse = new();
 
         IEnumerable<ICivilizedObject> civilizedObjects =
             dbContext

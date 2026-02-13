@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\common-tests.props"/>
+
+    <ItemGroup>
+      <ProjectReference Include="..\I\PPWCode.Vernacular.EntityFrameworkCore.I.csproj" />
+    </ItemGroup>
+
+</Project>
