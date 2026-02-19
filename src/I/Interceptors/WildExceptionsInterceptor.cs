@@ -76,7 +76,7 @@ public class WildExceptionsInterceptor : SaveChangesInterceptor
     ///     Only entities in the <see cref="EntityState.Added" /> or <see cref="EntityState.Modified" /> states are validated,
     ///     as these represent the data currently being pushed to the store.
     /// </remarks>
-    private CompoundSemanticException Validate(DbContext dbContext)
+    protected virtual CompoundSemanticException Validate(DbContext dbContext)
     {
         CompoundSemanticException cse = new();
 
