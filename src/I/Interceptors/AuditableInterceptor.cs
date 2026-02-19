@@ -46,6 +46,12 @@ public abstract class AuditableInterceptor<TTimestamp> : SaveChangesInterceptor
         return base.SavingChangesAsync(eventData, result, cancellationToken);
     }
 
+    public override InterceptionResult<int> SavingChanges(DbContextEventData eventData, InterceptionResult<int> result)
+        => SavingChangesAsync(eventData, result)
+            .ConfigureAwait(false)
+            .GetAwaiter()
+            .GetResult();
+
     protected virtual void UpdateAuditableEntities(DbContext context)
     {
         object requestTimestamp = _requestContext.RequestTimestamp;

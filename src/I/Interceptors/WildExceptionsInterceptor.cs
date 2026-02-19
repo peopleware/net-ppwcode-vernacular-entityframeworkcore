@@ -40,6 +40,12 @@ public class WildExceptionsInterceptor : SaveChangesInterceptor
         return base.SavingChangesAsync(eventData, result, cancellationToken);
     }
 
+    public override InterceptionResult<int> SavingChanges(DbContextEventData eventData, InterceptionResult<int> result)
+        => SavingChangesAsync(eventData, result)
+            .ConfigureAwait(false)
+            .GetAwaiter()
+            .GetResult();
+
     private CompoundSemanticException Validate(DbContext dbContext)
     {
         CompoundSemanticException cse = new();
