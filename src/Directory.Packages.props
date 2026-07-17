@@ -50,7 +50,7 @@
         <PackageVersion Include="Npgsql" Version="10.*" />
 
         <!-- Microsoft SQL Server -->
-        <PackageVersion Include="Microsoft.Data.SqlClient" Version="6.*" />
+        <PackageVersion Include="Microsoft.Data.SqlClient" Version="7.*" />
 
         <!-- nunit -->
         <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.*" />
